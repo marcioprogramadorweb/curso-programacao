@@ -50,7 +50,7 @@ let combustivelDia = 95;
 let almoco = 25;
 
 let gastos = combustivelDia + almoco;
-let sobraDia = faturamento - gastos;
+let sobraDia = faturamentoDia - gastos;
 let bateuMetaDia = faturamentoDia >= metaDiaria;
 let sobraMaior = sobraDia > 200;
 
