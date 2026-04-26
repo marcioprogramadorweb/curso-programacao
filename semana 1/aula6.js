@@ -22,8 +22,8 @@ let frequencia = 70;
 
 if (nota >= 7 && frequencia >= 75) {
     console.log("Aprovado");
-} else if (nota >= 7 && frenquencia < 75) {
-    console.log("Reporvado por faltas");
+} else if (nota >= 7 && frequencia < 75) {
+    console.log("Reprovado por faltas");
 } else {
     console.log("Reprovado por nota");
 }
@@ -67,6 +67,7 @@ if (saldo >=  2000) {
 }
 
 // Mini desafio
+// Mini desafio
 let metaDiariaDF = 300;
 let faturamentoDiaDF = 360;
 let combustivelDF = 110;
@@ -80,12 +81,21 @@ let sobraDF = faturamentoDiaDF - gastosDF;
 let bateuMetaDF = faturamentoDiaDF >= metaDiariaDF;
 let sobraBoaDF = sobraDF >= 200;
 
+let classificacaoDiaDF;
+
 if (bateuMetaDF && sobraBoaDF && !estaCansadoDF) {
-    console.log("Dia excelente");
+    classificacaoDiaDF = "Dia excelente";
 } else if (bateuMetaDF && sobraBoaDF) {
-    console.log("Dia foi bom, mas atenção ao cansaço");
+    classificacaoDiaDF = "Dia bom, mas atenção ao cansaço";
 } else if (bateuMetaDF) {
-    console.log("Bateu a meta, mas a sobra foi baixa");
+    classificacaoDiaDF = "Bateu a meta, mas a sobra foi baixa";
 } else {
-    console.log("Dia baixo da meta");
+    classificacaoDiaDF = "Dia abaixo da meta";
 }
+
+console.log("Faturamento:", faturamentoDiaDF);
+console.log("Gastos:", gastosDF);
+console.log("Sobra:", sobraDF);
+console.log("Bateu a meta?", bateuMetaDF);
+console.log("Sobra boa?", sobraBoaDF);
+console.log("Classificação do dia:", classificacaoDiaDF);
