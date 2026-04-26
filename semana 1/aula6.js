@@ -67,7 +67,6 @@ if (saldo >=  2000) {
 }
 
 // Mini desafio
-// Mini desafio
 let metaDiariaDF = 300;
 let faturamentoDiaDF = 360;
 let combustivelDF = 110;
