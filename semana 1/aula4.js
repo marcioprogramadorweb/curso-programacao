@@ -52,17 +52,17 @@ if (faturamento >= 350) {
 } else if (faturamento >= 200) {
     console.log("Dia razoável");
 } else {
-    console.log("Dia franco");
+    console.log("Dia fraco");
 }
 
 // Exercício 6
-nota = 5;
+ let notaex6 = 5;
 
-if (nota >= 9) {
+if (notaex6 >= 9) {
     console.log("Excelente");
-} else if (nota >= 7) {
+} else if (notaex6 >= 7) {
      console.log("Aprovado");
-} else if (nota >= 5) {
+} else if (notaex6 >= 5) {
      console.log("Recuperação");
 } else {
      console.log("Reprovado");
@@ -82,7 +82,7 @@ let dia;
 
 if (faturamentoDia >= 400) {
     dia = "Dia excelente";
-} else if (faturamentoDia >- 300) {
+} else if (faturamentoDia >= 300) {
     dia = "Dia bom";
 } else if (faturamentoDia >= 200) {
     dia = "Dia razoável";
