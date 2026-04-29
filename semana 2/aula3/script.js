@@ -29,6 +29,12 @@ botaoCalcular.addEventListener("click", function () {
   let gastosTotais = combustivel + almoco + manutencao;
   let sobraDia = faturamento - gastosTotais;
   let bateuMeta = faturamento >= metaDiaria;
+
+  if (horasTrabalhadas <= 0) {
+    resultado.textContent = "As horas trabalhadas devem ser maiores que zero.";
+    return;
+  }
+
   let ganhoPorHora = faturamento / horasTrabalhadas;
   let sobraBoa = sobraDia >= 200;
   let classificacaoDia;
