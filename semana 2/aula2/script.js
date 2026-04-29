@@ -10,9 +10,7 @@ botaoEnviar.addEventListener("click", function () {
   if (nome === "") {
     resultado.textContent = "Campo obrigatório. Digite seu nome.";
   } else if (idade ==="") {
-
     resultado.textContent = "Campo obrigatório. Digite sua idade.";
-  
   } else {
     resultado.textContent = `${nome}, cadastro gerado com sucesso. Idade: ${idade} anos.`;
   }
